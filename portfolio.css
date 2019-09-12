@@ -16,7 +16,7 @@ p {
 outline-style: solid;
 }
 
-ul.menu_list {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ ul.menu_list {
   background-color: #333;
 }
 
-li a {
+nav li a {
   float: left;
   display: block;
   color: white;
@@ -33,10 +33,22 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
   background-color: #111;
 }
 
-.active {
+nav .active {
   background-color: #4CAF50;
+}
+
+section {
+ display: flex;
+}
+
+aside {
+ flex: 1
+}
+
+article {
+ flex: 4
 }
